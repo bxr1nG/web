@@ -1,0 +1,22 @@
+.dark {
+    background-color: #fb607d;
+}
+
+.light {
+    background-color: #ffced8;
+}
+
+.table {
+    width: 500px;
+    height: 500px;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    & > * {
+        width: calc(100% / 10);
+        height: calc(100% / 10);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

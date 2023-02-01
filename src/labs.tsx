@@ -1,20 +1,45 @@
 import React from "react";
-import AirlineSeatFlatAngledIcon from "@mui/icons-material/AirlineSeatFlatAngled";
+import AnchorIcon from "@mui/icons-material/Anchor";
+import SettingsInputCompositeIcon from "@mui/icons-material/SettingsInputComposite";
 
 const icon = {
     width: "3rem",
     height: "3rem"
 };
 
-const labs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
-    (item) => ({
-        name: `Lab ${item}`,
-        icon: <AirlineSeatFlatAngledIcon sx={icon} />,
-        tasks: [1, 2, 3, 4, 5].map((task) => ({
-            name: `Task ${task}`,
-            to: `/lab${item}/task${task}`
-        }))
-    })
-);
+const labs = [
+    {
+        name: "Lab 1",
+        icon: <AnchorIcon sx={icon} />,
+        tasks: [
+            {
+                name: "Task 1",
+                to: "/lab1/task1"
+            },
+            {
+                name: "Task 2",
+                to: "/lab1/task2"
+            },
+            {
+                name: "Task 3",
+                to: "/lab1/task3"
+            }
+        ]
+    },
+    {
+        name: "Lab 2",
+        icon: <SettingsInputCompositeIcon sx={icon} />,
+        tasks: [
+            {
+                name: "Task 1",
+                to: "/lab2/task1"
+            },
+            {
+                name: "Task 2",
+                to: "/lab2/task2"
+            }
+        ]
+    }
+];
 
 export default labs;
