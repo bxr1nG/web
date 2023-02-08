@@ -11,6 +11,13 @@ import Lab1Task3 from "./Labs/Lab1/Task3";
 import Lab2Task1 from "./Labs/Lab2/Task1";
 import Lab2Task2 from "./Labs/Lab2/Task2";
 
+import Lab3Task1 from "./Labs/Lab3/Task1";
+import Lab3Task2 from "./Labs/Lab3/Task2";
+
+import Lab4Task1 from "./Labs/Lab4/Task1";
+
+import Lab5Task1 from "./Labs/Lab5/Task1";
+
 type AppProps = Record<string, unknown>;
 
 const App: React.FC<AppProps> = () => {
@@ -40,6 +47,22 @@ const App: React.FC<AppProps> = () => {
                 <Route
                     path="/lab2/task2"
                     element={<Lab2Task2 />}
+                />
+                <Route
+                    path="/lab3/task1"
+                    element={<Lab3Task1 />}
+                />
+                <Route
+                    path="/lab3/task2"
+                    element={<Lab3Task2 />}
+                />
+                <Route
+                    path="/lab4/task1"
+                    element={<Lab4Task1 />}
+                />
+                <Route
+                    path="/lab5/task1"
+                    element={<Lab5Task1 />}
                 />
                 <Route
                     path="*"
